@@ -1,10 +1,11 @@
 import express, { application } from "express";
 import { config } from "./config";
 import mongoose, { Error } from "mongoose";
-import { router } from "./routes";
 
+import { router } from "./routes/routes";
 import { userRouter } from "./routes/user-routes";
 import { UserModel, UserDoc } from "./models/user";
+
 // require-syntax used to parse json doc
 const USERS = require("./data/users.json");
 
