@@ -12,7 +12,8 @@ export interface Transaction {
     holdingPeriod: number,
     avgInitiationPrice: number,
     avgLiquidationPrice: number,
-    stopLoss: number
+    stopLoss: number,
+    executions: Execution[]
 }
 
 export interface Execution {
