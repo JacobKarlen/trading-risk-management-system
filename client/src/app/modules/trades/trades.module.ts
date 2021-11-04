@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
+import { TradesPageComponent } from './pages/trades-page/trades-page.component';
 
 
 
 @NgModule({
   declarations: [
-    DashboardPageComponent
+    TradesPageComponent
   ],
   imports: [
     CommonModule
   ]
 })
-export class DashboardModule { }
+export class TradesModule { }
