@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_PATH=./build node build/index.js",
-    "build": "./node_modules/.bin/tsc -p .",
+    "build": "./node_modules/.bin/tsc -p . && cp -r ./src/data ./build",
     "dev": "./node_modules/.bin/nodemon src/index.ts"
   },
   "author": "",
@@ -21,6 +21,7 @@
     "typescript": "^4.4.3"
   },
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.17.1",
     "mongoose": "^6.0.10"
   }
